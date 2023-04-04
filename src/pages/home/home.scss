@@ -1,9 +1,14 @@
 .home{
     display: flex;
+    width:100%;
 
     .home-container{
         
         flex: 6;
+
+        .widget{
+            display: flex;
+        }
     }
 
 }
