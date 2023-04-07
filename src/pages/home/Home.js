@@ -5,7 +5,7 @@ import Widgets from '../../components/widgets/Widgets'
 import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 
-function home() {
+function Home() {
   return (
     <div className='home'>
       <Sidebar/>
@@ -14,10 +14,10 @@ function home() {
         <Navbar/>
 
         <div className='widget'> 
-          <Widgets/>
-          <Widgets/>
-          <Widgets/>
-          <Widgets/>
+          <Widgets type='user'  />
+          <Widgets type='order' />
+          <Widgets type='earning' />
+          <Widgets type='balance'/>
 
 
         </div>
@@ -26,4 +26,4 @@ function home() {
   )
 }
 
-export default home
+export default Home

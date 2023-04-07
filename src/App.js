@@ -1,9 +1,10 @@
-import Home from "./pages/home/Home";
+
 import React from "react";
 import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import List from './pages/list/List';
 import Single from './pages/single/Single';
+import Home from "./pages/home/Home";
 import {
   BrowserRouter,
   Routes,
