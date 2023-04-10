@@ -25,8 +25,9 @@ function Home() {
 
         </div>
         <div className='charts'>
-          <Chart/>
+          
           <Featured/>
+          <Chart/>
         </div>
       </div>
     </div>
