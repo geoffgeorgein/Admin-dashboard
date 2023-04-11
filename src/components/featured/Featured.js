@@ -3,7 +3,7 @@ import './Featured.scss'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 function Featured() {
   return (
@@ -25,6 +25,31 @@ function Featured() {
         <p className='amount'> $420</p>
         <p className='desc'>Previous transactions processing.Last payments may not be included. </p>
 
+        <div className='summary'>
+          <div className='item'>
+            <div className='itemTitle'>Target</div>
+            <div className='itemResult negative'>
+              <ArrowDownwardIcon fontSize='small'/>
+              <div className='resultAmount'>$11.2k</div>
+            </div>
+          </div>
+
+          <div className='item'>
+            <div className='itemTitle'>Target</div>
+            <div className='itemResult positive'>
+              <ArrowDownwardIcon fontSize='small'/>
+              <div className='resultAmount'>$11.2k</div>
+            </div>
+          </div>
+
+          <div className='item'>
+            <div className='itemTitle'>Target</div>
+            <div className='itemResult negative'>
+              <ArrowDownwardIcon fontSize='small'/>
+              <div className='resultAmount'>$11.2k</div>
+            </div>
+          </div>
+        </div>
         </div>
     </div>
   )
