@@ -5,6 +5,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
+// 
+// 
 
 function Featured() {
   return (
@@ -19,7 +21,7 @@ function Featured() {
       <div className='bottom'>
         <div className='featured chart'>
 
-          <CircularProgressbar value={70} text='70%' strokeWidth={4}/> 
+          <CircularProgressbar value={70} text='70%' strokeWidth={4} className='circular_progressbar'/> 
 
         </div>
         <p className='title'> Total sales made today</p>
