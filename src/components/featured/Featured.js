@@ -4,6 +4,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 
 function Featured() {
   return (
@@ -37,7 +38,7 @@ function Featured() {
           <div className='item'>
             <div className='itemTitle'>Target</div>
             <div className='itemResult positive'>
-              <ArrowDownwardIcon fontSize='small'/>
+              <ArrowUpwardOutlinedIcon fontSize='small'/>
               <div className='resultAmount'>$11.2k</div>
             </div>
           </div>
