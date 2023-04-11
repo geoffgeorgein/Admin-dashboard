@@ -6,7 +6,6 @@ import 'react-circular-progressbar/dist/styles.css';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 // 
-// 
 
 function Featured() {
   return (
