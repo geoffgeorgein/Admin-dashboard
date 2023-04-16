@@ -29,10 +29,10 @@ function New() {
             <form>
 
             <div className='formInput'>
-              <label>
+              <label htmlFor='file'>
                 <UploadFileOutlinedIcon/>
               </label>
-                <input type="file" ></input>
+                <input type="file"  id='file' style={{display:"none"}}></input>
               </div>
               <div className='formInput'>
                 <label>Username</label>
