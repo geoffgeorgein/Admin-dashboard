@@ -11,6 +11,7 @@ import {
   Route
   
 } from "react-router-dom";
+import { productInputs, userInputs } from "./formsource";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
 
                 <Route index element={<List/>}></Route>
                 <Route path=':userId' element={<Single/>}></Route>
-                <Route path='new' element={<New/>}></Route>
+                <Route path='new' element={<New inputs={userInputs} title="Add new user"/>}></Route>
 
             </Route>
 
@@ -35,7 +36,7 @@ function App() {
 
                 <Route index element={<List/>}></Route>
                 <Route path=':productId' element={<Single/>}></Route>
-                <Route path='new' element={<New/>}></Route>
+                <Route path='new' element={<New inputs={productInputs} title="Add new product" />}></Route>
 
             </Route>
             <Route path='new' element={<New/>}></Route>
