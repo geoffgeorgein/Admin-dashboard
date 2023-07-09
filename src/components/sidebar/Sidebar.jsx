@@ -10,28 +10,38 @@ import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import { Link } from 'react-router-dom';
 
 
 function Sidebar() {
   return (
+    <>
     <div className='sidebar'>
 
+    <Link to={'/'} style={{textDecoration:"none"}}>
       <div className='top'> <span className='logo'>GG admin</span> </div>
+    </Link>
       <div className='center'>
+
+    
 
       <ul>
 
       <p className='title'>LISTS</p>
         <li> 
-        
+        <Link to={'/users'} style={{textDecoration:"none"}}>
           <PeopleOutlineIcon className='icon'/>
           <span> Users</span>
+          </Link>
         </li>
 
         <li> 
+        <Link to={'/products'} style={{textDecoration:"none"}}>
           <InventoryIcon className='icon' />
-          <span>Products </span></li>
-
+          <span>Products </span>
+        </Link>
+        </li>
+          
         <li> 
           <CreditCardIcon className='icon' />
           <span> Orders</span></li>
@@ -80,6 +90,7 @@ function Sidebar() {
       </div>
 
     </div>
+    </>
   )
 }
 
